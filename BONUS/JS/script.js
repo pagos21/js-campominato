@@ -121,18 +121,26 @@ btn.addEventListener("click", function(){
     // Se il numero è presente nel campo minato della CPU
     else if (arrCPU.includes(num)) {
       console.log("Mine!!! " + String.fromCodePoint(0x1F4A3));
-      alert("End of the line dude!" + String.fromCodePoint(0x1F4A3));
+      alert("End of the line dude!\nScore: " + score + String.fromCodePoint(0x1F4A3));
       console.log("Your score is " + score);
     }
     // Se il il punteggio raggiunge 10
-    else if (score >= 10) {
-      alert("Yeah, you win!!!" + String.fromCodePoint(0x1F91F))
+    else if (score >= 1) {
+      alert("Yeah, you win!!!" + String.fromCodePoint(0x1F91F));
+      document.getElementById("list").innerHTML += "<li><i>" + " &#127870 " + "</i></li>"
+      document.getElementById("btn3").className = "show";
     }
     // Se il numero è valido aumento il punteggio
     else {
       arrUser.push(num);
       score += 1;
       console.log(String.fromCodePoint(0x1F44C));
+      document.getElementById("list").innerHTML += "<li><i>" + " &#128077 " + "</i></li>"
     }
 
+});
+
+
+btn3.addEventListener("click", function(){
+  location.reload();
 });

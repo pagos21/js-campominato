@@ -16,3 +16,11 @@
 .hide{
   display: none;
 }
+
+.cont2{
+  margin-top: 10px;
+}
+
+ul li {
+  padding: 5px 0;
+}
