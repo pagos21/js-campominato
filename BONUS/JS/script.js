@@ -127,7 +127,7 @@ btn.addEventListener("click", function(){
       console.log("Your score is " + score);
     }
     // Se il il punteggio raggiunge 10
-    else if (score >= 1) {
+    else if (score >= 10) {
       alert("Yeah, you win!!!" + String.fromCodePoint(0x1F91F));
       document.getElementById("list").innerHTML += "<li><i>" + " &#127870 " + "</i></li>"
       document.getElementById("btn3").className = "show";
