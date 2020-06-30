@@ -7,7 +7,7 @@ function randomIntInclusiveF(min, max) {
 
 // Check for duplicate numbers
 function duplicates(p1){
-  return new Set(p1).size !== p1.lenght;
+  return new Set(p1).size != p1.length;
 }
 
 
@@ -54,7 +54,7 @@ btn.addEventListener("click", function(){
 
   }
   else if (arrCPU.includes(num)) {
-    console.log("Mine!!!");
+    console.log("Mine!!! U+1F4A3");
     alert("End of the line dude!");
     console.log("Your score is " + score);
   }
