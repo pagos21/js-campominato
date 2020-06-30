@@ -124,10 +124,11 @@ btn.addEventListener("click", function(){
     else if (arrCPU.includes(num)) {
       console.log("Mine!!! " + String.fromCodePoint(0x1F4A3));
       alert("End of the line dude!\nScore: " + score + String.fromCodePoint(0x1F4A3));
+      document.getElementById("btn3").className = "show";
       console.log("Your score is " + score);
     }
     // Se il il punteggio raggiunge 10
-    else if (score >= 10) {
+    else if (score >= 5) {
       alert("Yeah, you win!!!" + String.fromCodePoint(0x1F91F));
       document.getElementById("list").innerHTML += "<li><i>" + " &#127870 " + "</i></li>"
       document.getElementById("btn3").className = "show";
