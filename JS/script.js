@@ -54,17 +54,18 @@ btn.addEventListener("click", function(){
 
   }
   else if (arrCPU.includes(num)) {
-    console.log("Mine!!! U+1F4A3");
+    console.log("Mine!!! " + String.fromCodePoint(0x1F4A3));
     alert("End of the line dude!");
     console.log("Your score is " + score);
   }
   else if (score >= 10) {
-    alert("Yeah, you win!!!")
+    alert("Yeah, you win!!!" + String.fromCodePoint(0x1F91F))
   }
 
   else {
     arrUser.push(num);
     score += 1;
+    console.log(String.fromCodePoint(0x1F44C));
   }
 
 });
