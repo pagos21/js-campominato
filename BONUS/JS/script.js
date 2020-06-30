@@ -70,6 +70,8 @@ var difficultyG;
 btn2.addEventListener("click", function(){
   var difficulty = document.getElementById("difficulty").value;
   difficultyG = difficulty;
+  var mediaClip = document.getElementById("OK");
+      mediaClip.play();
   alert("OK!");
   console.log("Difficoltà settata a " + difficulty);
   document.getElementById("btn2").className = "hide";
