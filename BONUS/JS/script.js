@@ -67,12 +67,10 @@ var score = 0;
 var numG;
 var difficultyG;
 
+
 btn2.addEventListener("click", function(){
   var difficulty = document.getElementById("difficulty").value;
   difficultyG = difficulty;
-  var mediaClip = document.getElementById("OK");
-      mediaClip.play();
-  alert("OK!");
   console.log("Difficoltà settata a " + difficulty);
   document.getElementById("btn2").className = "hide";
   document.getElementById("difficulty").className = "hide";
@@ -82,23 +80,29 @@ btn2.addEventListener("click", function(){
 
 
   if (difficulty == "Easy") {
+    alert("Easy, OK!");
     easy();
     document.getElementById("num").placeholder = "Number 0-100";
 
   }
   else if (difficulty == "Medium") {
+    alert("Medium, OK!");
     medium();
     document.getElementById("num").placeholder = "Number 0-80";
-
   }
+
   else {
     hard();
+    var mediaClip = document.getElementById("OK");
+        mediaClip.play();
+    alert("HARD, OK!");
     document.getElementById("num").placeholder = "Number 0-50";
   }
 
 })
 
 btn.addEventListener("click", function(){
+  console.log(score);
   var num = parseInt(document.getElementById("num").value);
     // Controllo che il numero sia valido
     if (difficultyG == "Easy" && num > 100) {
@@ -127,12 +131,14 @@ btn.addEventListener("click", function(){
       document.getElementById("btn3").className = "show";
       console.log("Your score is " + score);
     }
-    // Se il il punteggio raggiunge 10
-    else if (score >= 5) {
-      alert("Yeah, you win!!!" + String.fromCodePoint(0x1F91F));
-      document.getElementById("list").innerHTML += "<li><i>" + " &#127870 " + "</i></li>"
-      document.getElementById("btn3").className = "show";
+
+    // Se il il punteggio raggiunge 5
+    else if (score >= 4) {
+     alert("Yeah, you win!!!" + String.fromCodePoint(0x1F91F));
+     document.getElementById("list").innerHTML += "<li><i>" + " &#127870 " + "</i></li>"
+     document.getElementById("btn3").className = "show";
     }
+
     // Se il numero è valido aumento il punteggio
     else {
       arrUser.push(num);
@@ -142,7 +148,6 @@ btn.addEventListener("click", function(){
     }
 
 });
-
 
 btn3.addEventListener("click", function(){
   location.reload();
