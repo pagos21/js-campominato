@@ -69,7 +69,7 @@ btn2.addEventListener("click", function(){
 
 })
 
-
+// Funzione per capire se l'utente ha premuto enter!
 function enterkey(){
   if (event.keyCode === 13) {
     enterPressed();
@@ -78,6 +78,7 @@ function enterkey(){
   }
 }
 
+// Eseguo funzione se l'utente preme enter
 function enterPressed(){
   console.log(score);
   var list = document.getElementById("list");
@@ -135,7 +136,7 @@ function enterPressed(){
 }
 
 
-
+// Reset Buton
 btn3.addEventListener("click", function(){
   location.reload();
 });
