@@ -4,10 +4,53 @@
   box-sizing: border-box;
 }
 
-.cont{
-  display: flex;
+body{
+  background-image: url(../img/mines.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+h1{
+  color: orange;
+  font-weight: bold;
+  font-size: 55px;
+  text-align: center;
+}
+
+.precont{
+  float: right;
+  padding: 0 5px;
+}
+
+.cont{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+
+.cont label{
+  margin: 10px 0;
+
+}
+
+input, .cont button, select{
+  width: 20%;
+  text-align: center;
+}
+
+input, select{
+  width: 20%;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.cont button{
+  font-weight: bolder;
+  width: 15%;
+}
 
 .show{
   display: block;
@@ -21,6 +64,17 @@
   margin-top: 10px;
 }
 
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 ul li {
-  padding: 5px 0;
+  padding: 5px;
+  list-style: none;
+  background-color: #ccc;
+
+
 }
