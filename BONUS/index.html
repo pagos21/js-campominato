@@ -21,13 +21,14 @@
     </div>
 
     <div class="cont">
-      <input id="num" class="hide" type="number" onkeypress="enterkey()" ondblclick="this.value=''" name="" value="">
+      <input id="num" class="hide" type="number" ondblclick="this.value=''" name="" value="">
       <label id="label1" for="difficulty">Difficulty:</label>
       <select id="difficulty" class="show" name="">
         <option value="Easy">Ride in the park</option>
         <option value="Medium">Standard</option>
         <option class="hard" value="Hard">Hell Dive!</option>
       </select>
+      <button id="btn" type="button" onclick="enterPressed()" class="hide" name="button">Go</button>
       <button id="btn2" type="button" class="show" name="button">Set Difficulty</button>
     </div>
 
@@ -35,13 +36,8 @@
       <ul id="list">
       </ul>
     </div>
-    <button id="btn3"  type="button" class="hide" name="button">Play Again?</button>
 
 
-    <audio id="OK">
-      <source src="./OK.mp3" type="audio/mpeg">
-        Not sup
-    </audio>
     <script type="text/javascript" src="JS/script.js">
     </script>
   </body>
