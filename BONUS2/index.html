@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://kit.fontawesome.com/d4368e456d.js" crossorigin="anonymous"></script> -->
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+		<!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> -->
+		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <title>Minefield!</title>
+  </head>
+  <body>
+    <h1>MINEFIELD!</h1>
+    <div class="precont">
+      <p>Vedi Console</p>
+      <!-- <button id="console" type="button" onclick="consoleOpen()" name="button">Open Console!</button> -->
+    </div>
+
+    <div class="cont">
+      <input id="num" class="hide" type="number" onkeypress="enterkey()" ondblclick="this.value=''" name="" value="">
+      <label id="label1" for="difficulty">Difficulty:</label>
+      <select id="difficulty" class="show" name="">
+        <option value="Easy">Ride in the park</option>
+        <option value="Medium">Standard</option>
+        <option class="hard" value="Hard">Hell Dive!</option>
+      </select>
+      <button id="btn2" type="button" class="show" name="button">Set Difficulty</button>
+    </div>
+
+    <div class="cont2">
+      <ul id="list">
+      </ul>
+    </div>
+    <button id="btn3"  type="button" class="hide" name="button">Play Again?</button>
+
+
+    <audio id="OK">
+      <source src="./OK.mp3" type="audio/mpeg">
+        Not sup
+    </audio>
+    <script type="text/javascript" src="JS/script.js">
+    </script>
+  </body>
+</html>
